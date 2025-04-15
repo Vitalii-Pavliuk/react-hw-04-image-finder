@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-hw-04-image-finder/static/css/main.73ca184d.css",
+    "main.js": "/react-hw-04-image-finder/static/js/main.6207cc40.js",
+    "index.html": "/react-hw-04-image-finder/index.html",
+    "main.73ca184d.css.map": "/react-hw-04-image-finder/static/css/main.73ca184d.css.map",
+    "main.6207cc40.js.map": "/react-hw-04-image-finder/static/js/main.6207cc40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73ca184d.css",
+    "static/js/main.6207cc40.js"
+  ]
+}
