@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ImageGalleryItem.module.css';
 
-export default class ImageGalleryItem extends Component {
-  handleClick = () => {
-    this.props.onImageClick(this.props.image);
+function ImageGalleryItem({ image, onImageClick }) {
+  const { webformatURL, tags } = image;
+
+  const handleClick = () => {
+    onImageClick(image);
   };
 
-  render() {
-    const { webformatURL, tags } = this.props.image;
-
     return (
-      <li className={styles.GalleryItem} onClick={this.handleClick}>
+      <li className={styles.GalleryItem} onClick={handleClick}>
         <img
           src={webformatURL}
           alt={tags}
@@ -20,7 +19,6 @@ export default class ImageGalleryItem extends Component {
       </li>
     );
   }
-}
 
 ImageGalleryItem.propTypes = {
   image: PropTypes.shape({
@@ -31,3 +29,5 @@ ImageGalleryItem.propTypes = {
   }).isRequired,
   onImageClick: PropTypes.func.isRequired,
 };
+
+export default ImageGalleryItem;

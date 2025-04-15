@@ -2,7 +2,7 @@ import { Oval } from 'react-loader-spinner';
 
 import styles from './Loader.module.css';
 
-export const Loader = () => {
+function Loader () {
   return (
     <div className={styles.loader}>
       <Oval
